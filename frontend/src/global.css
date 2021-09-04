@@ -1,0 +1,15 @@
+/*=== Global =========*/
+:root {
+    --blue-dark: #363f5f;
+    --green: #49aa26;
+    --green-dark: #2d4a22;
+    --green-light: #3dd705;
+    --lilac: #969cd3;
+    --off-white: #f0f2f5;
+    --red: #e92929;
+  }
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
