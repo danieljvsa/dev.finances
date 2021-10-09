@@ -20,7 +20,7 @@ export default function Register() {
             alert('usertoken: '+ res.data.token)
             history.push('/profile')
         } catch (err) {
-            alert('Email Inválido' + err)
+            //alert('Email Inválido' + err)
         }
       }
     return (

@@ -1,6 +1,7 @@
 const nodemailer = require('nodemailer')
 const hbs = require('nodemailer-express-handlebars');
 const path = require('path')
+require('dotenv').config()
 const {NODE_HOST, NODE_PORT, NODE_USER, NODE_PASS} = process.env
 
 var transport = nodemailer.createTransport({
@@ -9,7 +10,8 @@ var transport = nodemailer.createTransport({
     auth: {
       user: NODE_USER,
       pass: NODE_PASS
-    }
+    },
+    ignoreTLS: true 
   });
 
 transport.use('compile', hbs({

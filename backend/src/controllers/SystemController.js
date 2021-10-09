@@ -4,6 +4,10 @@ const jwt = require("jsonwebtoken")
 const crypto = require('crypto')
 const mailer = require('../modules/mailer')
 
+
+require('dotenv').config()
+
+
 function generateToken(params = {}){
   return jwt.sign(params, process.env.JWT_KEY, {
       expiresIn: 86400 // 24 hours
